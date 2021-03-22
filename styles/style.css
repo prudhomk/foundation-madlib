@@ -20,6 +20,11 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url(../assets/james-bond-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 @font-face {
@@ -29,10 +34,10 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    margin-bottom: calc(var(--footer-height)); */
 }
 
 section {
@@ -57,6 +62,7 @@ header {
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    text-transform: uppercase;
 }
 
 footer {
@@ -69,12 +75,14 @@ footer {
 h1 {
     font-size: 80px;
     font-weight: bold;
-    font-family: QuantumItalic;
+    font-family: "Syne Mono", monospace;
 }
 
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
 .gutter-right {
@@ -126,3 +134,26 @@ p {
   .top-secret {
       display: none;
   }
+
+  .circle {
+      align-self: flex-end;
+      /* height: 300px; */
+      padding: 0;
+      margin: 20px;
+  }
+
+  .main-section {
+      display: flex-start;
+  }
+
+  input {
+      margin: 5px
+  }
+
+  button {
+      text-transform: uppercase;
+      font-style: italic;
+      padding: 5px;
+  }
+
+   { 
