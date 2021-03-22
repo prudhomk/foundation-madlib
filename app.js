@@ -34,8 +34,10 @@ const button = document.getElementById('button');
 // initialize state
 
 // set event listeners to update state and DOM
+
+
 button.addEventListener('click', ()=> {
-    
+    const div = document.getElementById("classified");
     display1.textContent = input1.value;
     display2.textContent = input2.value;
     display3.textContent = input3.value;
@@ -50,6 +52,7 @@ button.addEventListener('click', ()=> {
     display12.textContent = input12.value;
     display13.textContent = input13.value;
     display14.textContent = input14.value;
-
     
+    div.classList.toggle("classified");
+ 
 });
