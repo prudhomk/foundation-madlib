@@ -23,7 +23,7 @@ const display5 = document.getElementById('display-5-noun');
 const display6 = document.getElementById('display-6-noun');
 const display7 = document.getElementById('display-7-noun');
 const display8 = document.getElementById('display-8-plural-noun');
-const display9 = document.getElementById('display-9-noun');
+const display9 = document.getElementById('display-9-adjective');
 const display10 = document.getElementById('display-10-bodypart');
 const display11 = document.getElementById('display-11-noun');
 const display12 = document.getElementById('display-12-adjective');
@@ -38,6 +38,8 @@ const button = document.getElementById('button');
 
 button.addEventListener('click', ()=> {
     const div = document.getElementById("classified");
+    const section = document.getElementById('inputs');
+
     display1.textContent = input1.value;
     display2.textContent = input2.value;
     display3.textContent = input3.value;
@@ -54,5 +56,5 @@ button.addEventListener('click', ()=> {
     display14.textContent = input14.value;
     
     div.classList.toggle("classified");
- 
+    section.classList.add("top-secret");
 });

@@ -121,3 +121,7 @@ footer {
   .classified {
     display: none;
   }
+
+  .top-secret {
+      display: none;
+  }
