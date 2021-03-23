@@ -47,7 +47,7 @@ button.addEventListener('click', ()=> {
         console.log(val);
     
         if ((val === '')) {
-            alert(`Fill in the Blank ${allInputs[i].value}`);
+            alert(`Fill in the Blank ${i}`);
             
         } else ((val !== ''));
         myAudio.play();
