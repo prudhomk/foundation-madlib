@@ -47,7 +47,7 @@ button.addEventListener('click', ()=> {
         console.log(val);
     
         if ((val === '')) {
-            return alert('Fill in the Blank');
+            alert(`Fill in the Blank ${allInputs[i].value}`);
             
         } else ((val !== ''));
         myAudio.play();
@@ -67,7 +67,7 @@ button.addEventListener('click', ()=> {
         display14.textContent = input14.value;
         div.classList.toggle('classified');
         section.classList.toggle('top-secret');
-        break;
+        
     }    
 }   
     
