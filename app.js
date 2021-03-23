@@ -29,6 +29,7 @@ const display11 = document.getElementById('display-11-noun');
 const display12 = document.getElementById('display-12-adjective');
 const display13 = document.getElementById('display-13-bodypart');
 const button = document.getElementById('button');
+let myAudio = document.querySelector('#audio');
 
 
 // initialize state
@@ -37,9 +38,7 @@ const button = document.getElementById('button');
 
 button.addEventListener('click', ()=> {
 
-    //error message for blank
-    
-
+    myAudio.play();
     const div = document.getElementById('classified');
     const section = document.getElementById('inputs');
     
@@ -59,6 +58,9 @@ button.addEventListener('click', ()=> {
     display14.textContent = input14.value
     div.classList.toggle('classified');
     section.classList.toggle('top-secret');
+    
+        
+    
 });
 
 /*tried to implement
