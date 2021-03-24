@@ -40,36 +40,36 @@ button.addEventListener('click', ()=> {
     
     const div = document.getElementById('classified');
     const section = document.getElementById('inputs');
-    const allInputs = document.querySelectorAll('input');
+    //const allInputs = document.querySelectorAll('input');
 
-    for (let i = 0; i < 14; i++) {
-        const val = allInputs[i].value;
-        console.log(val);
-    
-        if ((val === '')) {
-            alert(`Fill in the Blank ${i}`);
-            
-        } else ((val !== ''));
-        myAudio.play();
-        display1.textContent = input1.value;
-        display2.textContent = input2.value;
-        display3.textContent = input3.value;
-        display4.textContent = input4.value;
-        display5.textContent = input5.value;
-        display6.textContent = input6.value;
-        display7.textContent = input7.value;
-        display8.textContent = input8.value;
-        display9.textContent = input9.value;
-        display10.textContent = input10.value;
-        display11.textContent = input11.value;
-        display12.textContent = input12.value;
-        display13.textContent = input13.value;
-        display14.textContent = input14.value;
-        div.classList.toggle('classified');
-        section.classList.toggle('top-secret');
+    //for (let i = 0; i < 14; i++) {
+    //    const val = allInputs[i].value;
+    //    console.log(val);
+    //
+    //    if ((val === '')) {
+    //        alert(`Fill in the Blank ${i}`);
+    //        
+    //    } else ((val !== ''));
+    myAudio.play();
+    display1.textContent = input1.value;
+    display2.textContent = input2.value;
+    display3.textContent = input3.value;
+    display4.textContent = input4.value;
+    display5.textContent = input5.value;
+    display6.textContent = input6.value;
+    display7.textContent = input7.value;
+    display8.textContent = input8.value;
+    display9.textContent = input9.value;
+    display10.textContent = input10.value;
+    display11.textContent = input11.value;
+    display12.textContent = input12.value;
+    display13.textContent = input13.value;
+    display14.textContent = input14.value;
+    div.classList.toggle('classified');
+    section.classList.toggle('top-secret');
         
-    }    
-}   
+}    
+   
     
 );
 
